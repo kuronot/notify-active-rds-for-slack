@@ -2,9 +2,10 @@
 This solution is designed to prevent forgetting to stop RDS.
 
 Slack notifications will be skipped when the following three conditions are met.
--　　When RDS is created.
--　　When RDS starts up
--　Automatic startup after 7 days of RDS outage.
+
+- When RDS is created
+- When RDS starts up
+- Automatic startup after 7 days of RDS outage
 
 ## Architecture
 ![image](https://user-images.githubusercontent.com/52056195/228822795-5555303b-0c94-4a67-9595-1661b918a4ba.png)
