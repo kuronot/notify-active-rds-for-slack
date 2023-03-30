@@ -1,7 +1,7 @@
 # notify-active-rds-for-slack
 This solution is designed to prevent forgetting to stop RDS.
 
-Slack notifications will be skipped when the following three conditions are met.
+Slack will be notified when the following three conditions are met.
 
 - When RDS is created
 - When RDS starts up
