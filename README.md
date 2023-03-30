@@ -1,9 +1,17 @@
 # notify-active-rds-for-slack
+This solution is designed to prevent forgetting to stop RDS.
+
+Slack notifications will be skipped when the following three conditions are met.
+-　　When RDS is created.
+-　　When RDS starts up
+-　Automatic startup after 7 days of RDS outage.
 
 ## Architecture
+![image](https://user-images.githubusercontent.com/52056195/228822795-5555303b-0c94-4a67-9595-1661b918a4ba.png)
 
 ## Environment
 - Terraform v1.0.0　
+- aws-cli
 
 ## ファイル構成
 ```
@@ -36,7 +44,7 @@ $ stop-ec2-instance-from-slack# tree .
 ## Usage
 ### Advance preparation
 - From the AWS console screen, configure the client settings for the Slack workspace that sends notifications.
-  - 参考：https://qiita.com/hayao_k/items/529539bbb07736ea0f41#aws-chatbot%E3%81%AE%E8%A8%AD%E5%AE%9A
+  - reference：https://qiita.com/hayao_k/items/529539bbb07736ea0f41#aws-chatbot%E3%81%AE%E8%A8%AD%E5%AE%9A
 
 ### Terrafom Modules
 
