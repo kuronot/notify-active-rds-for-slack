@@ -14,7 +14,7 @@ Slack will be notified when the following three conditions are met.
 - Terraform v1.0.0　
 - aws-cli
 
-## ファイル構成
+## File Structure
 ```
 $ stop-ec2-instance-from-slack# tree .
 .
